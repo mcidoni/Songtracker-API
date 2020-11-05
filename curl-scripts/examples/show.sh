@@ -9,3 +9,14 @@ curl "${API}${URL_PATH}/${ID}" \
   --header "Authorization: Bearer ${TOKEN}"
 
 echo
+
+
+API="http://localhost:4741"
+URL_PATH="/songs"
+
+curl "${API}${URL_PATH}/${ID}" \
+  --include \
+  --request GET \
+  --header "Authorization: Bearer ${TOKEN}"
+
+echo
