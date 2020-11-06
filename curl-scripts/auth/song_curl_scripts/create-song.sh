@@ -9,8 +9,8 @@ curl "${API}${URL_PATH}" \
   --data '{
     "song": {
       "title": "'"${TITLE}"'",
-      "album": "'"${ALBUM}"'",
       "artist": "'"${ARTIST}"'",
+      "album": "'"${ALBUM}"'",
       "genre": "'"${GENRE}"'"
     }
   }'
