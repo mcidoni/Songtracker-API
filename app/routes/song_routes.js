@@ -65,7 +65,7 @@ router.post('/songs', requireToken, (req, res, next) => {
   Song.create(req.body.song)
     // respond to succesful `create` with status 201 and JSON of new "song"
     .then(song => {
-      res.status(201).json({ song: song.toObject() })
+      res.status(201).json({ song })
     })
     // if an error occurs, pass it off to our error handler
     // the error handler needs the error message and the `res` object so that it
